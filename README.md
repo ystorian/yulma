@@ -1,2 +1,2 @@
 # yulma
-A modern Zola theme made with Bulma for [Ystorian](https://ystorian.com)
+A modern [Zola](https://www.getzola.org/) theme made with [Bulma](https://bulma.io/) for [Ystorian](https://ystorian.com)
