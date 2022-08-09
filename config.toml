@@ -1,0 +1,13 @@
+name         = "yulma"
+description  = "Modern Zola theme made with Bulma"
+homepage     = "https://github.com/Ystorian/yulma"
+min_version  = "0.16.0"
+compile_sass = true
+
+[author]
+name     = "Flavien Scheurer"
+homepage = "https://github.com/Ystorian/yulma"
+
+[original]
+author = "Worble"
+repo   = "https://github.com/Worble/Zulma"
