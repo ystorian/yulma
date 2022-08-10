@@ -6,10 +6,6 @@ min_version  = "0.16.0"
 compile_sass = true
 base_url     = "."
 
-[author]
-name     = "Flavien Scheurer"
-homepage = "https://github.com/Ystorian/yulma"
-
-[original]
-author = "Worble"
-repo   = "https://github.com/Worble/Zulma"
+[extra]
+site_title       = "Yulma"
+site_description = "A modern Zola theme made with Bulma"
