@@ -1,5 +1,5 @@
 name         = "yulma"
-description  = "Modern Zola theme made with Bulma"
+description  = "A modern Zola theme made with Bulma"
 homepage     = "https://github.com/Ystorian/yulma"
 license      = "MIT"
 min_version  = "0.16.0"
