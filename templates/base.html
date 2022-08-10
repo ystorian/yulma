@@ -1,4 +1,6 @@
-{% if config.mode == 'Serve' %}{% set_global debug = true %}{% endif %}
+{# Set the global variable `debug` when running in local `serve` mode #}
+{%- if config.mode == 'Serve' %}{% set debug = true %}{% endif -%}
+
 <!doctype html>
 {% if debug %}<!-- base.html -->{% endif %}
 <html lang="{{lang}}">
