@@ -4,6 +4,7 @@ homepage     = "https://github.com/Ystorian/yulma"
 license      = "MIT"
 min_version  = "0.16.0"
 compile_sass = true
+base_url     = "."
 
 [author]
 name     = "Flavien Scheurer"
