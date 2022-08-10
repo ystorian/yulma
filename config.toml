@@ -8,4 +8,5 @@ base_url     = "."
 
 [extra]
 site_title       = "Yulma"
+debug            = true
 site_description = "A modern Zola theme made with Bulma"
