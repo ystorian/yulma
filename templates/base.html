@@ -1,10 +1,13 @@
+{% if config.mode == 'Serve' %}{% set_global debug = true %}{% endif %}
 <!doctype html>
+{% if debug %}<!-- base.html -->{% endif %}
 <html lang="{{lang}}">
+	<head>{% if debug %}<!-- base.html -> head -->{% endif %}
 
-	<head>
-	</head>
+	</head>{% if debug %}<!-- base.html -> /head -->{% endif %}
 
-	<body>
-	</body>
+	<body>{% if debug %}<!-- base.html -> body -->{% endif %}
 
-</html>
+	</body>{% if debug %}<!-- base.html -> /body -->{% endif %}
+</html>{% if debug %}<!-- end of base.html -->{% endif %}
+{% if debug %}<!-- {{__tera_context}} -->{% endif %}
