@@ -3,13 +3,13 @@
 
 <!doctype html>
 {% if debug %}<!-- base.html -->{% endif %}
-<html lang="{{lang}}">
-	<head>{% if debug %}<!-- base.html -> head -->{% endif %}
+<html lang="{{ lang }}">
+<head>{% if debug %}<!-- base.html -> head -->{% endif %}
+	{%- include "partials/head.html" -%}
+</head>{% if debug %}<!-- base.html -> /head -->{% endif %}
 
-	</head>{% if debug %}<!-- base.html -> /head -->{% endif %}
+<body>{% if debug %}<!-- base.html -> body -->{% endif %}
 
-	<body>{% if debug %}<!-- base.html -> body -->{% endif %}
-
-	</body>{% if debug %}<!-- base.html -> /body -->{% endif %}
+</body>{% if debug %}<!-- base.html -> /body -->{% endif %}
 </html>{% if debug %}<!-- end of base.html -->{% endif %}
 {% if debug %}<!-- {{__tera_context}} -->{% endif %}

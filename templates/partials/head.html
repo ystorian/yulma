@@ -1,0 +1,37 @@
+{#- head.html #}
+	{% if debug %}<!-- partials/head.html -->{% endif %}
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta property="og:updated_time" content="{{ now(utc = true) | date(format = '%+') }}" />
+	{% if debug %}<!-- Local time: {{ now() | date(format='%Y-%m-%d %H:%M') }} -->{% endif %}
+
+{#- Progressive Web Application #}
+{%- if config.extra.pwa %}
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+{%- endif -%}
+
+{#- Title #}
+{%- set title = config.extra.site_title %}
+{%- if page.title %}{% set title = config.extra.site_title ~ ' &middot; ' ~ page.title %}{% endif %}
+	<title>{{ title }}</title>
+	<meta property="og:title" content="{{ title }}">
+
+{#- Description #}
+{%- set description = config.extra.site_description %}
+{%- if page.description %}{% set description = page.description %}{% endif %}
+	<meta name="description" content="{{ description }}" />
+	<meta property="og:description" content="{{ description }}">
+
+{#- Favicon #}
+	<link rel="icon" sizes="any"
+		href="{{ get_url(path='icons/favicon.ico', cachebust=true) }}" />
+	<link rel="apple-touch-icon"
+		href="{{ get_url(path='icons/icon-180x180.png', cachebust=true) }}" />
+	<link rel="mask-icon" color="{{ config.extra.theme_color }}"
+		href="{{ get_url(path='icons/mask-icon.min.svg', cachebust=true) }}" />
+	<link rel="manifest"
+		href="{{ get_url(path='icons/manifest.json', cachebust=true) }}" />
+	<link rel="icon" type="image/svg+xml"
+		href="{{ get_url(path='icons/icon.svg', cachebust=true) }}" />
+

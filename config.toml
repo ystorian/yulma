@@ -9,3 +9,5 @@ base_url     = "."
 [extra]
 site_title       = "Yulma"
 site_description = "A modern Zola theme made with Bulma"
+pwa              = true
+theme_color      = "#8533ff"
