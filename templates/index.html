@@ -1,7 +1,18 @@
-{% extends 'base.html' %}
+{# Set the global variable `debug` when running in local `serve` mode #}
+{%- if config.mode | lower == 'serve' %}{% set debug = true %}{% endif -%}
 
-{% block content %}
-{{ section.content | safe }}
-{% endblock content %}
+<!doctype html>
+{% if debug %}<!-- index.html -->{% endif %}
+<html lang="{{ lang }}">
+<head>{% if debug %}<!-- index.html -> head -->{% endif %}
+	{%- include "partials/head.html" -%}
+</head>{% if debug %}<!-- index.html -> /head -->{% endif %}
 
-<!-- index.html -->
+<body>{% if debug %}<!-- index.html -> body -->{% endif %}
+	{% block content %}
+	{% endblock content %}
+	{%- include "partials/footer.html" -%}
+
+</body>{% if debug %}<!-- index.html -> /body -->{% endif %}
+</html>{% if debug %}<!-- end of index.html -->{% endif %}
+{% if debug %}<!-- {{__tera_context}} -->{% endif %}
