@@ -6,6 +6,9 @@ min_version  = "0.16.0"
 compile_sass = true
 base_url     = "."
 
+[markdown]
+highlight_code = true
+
 [extra]
 site_title       = "Yulma"
 site_description = "A modern Zola theme made with Bulma"
