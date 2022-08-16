@@ -1,0 +1,26 @@
+{% extends "index.html" %}
+
+
+{# Title #}
+{% block title %}<title>Page not found</title>{% endblock title %}
+
+
+{# Page heading #}
+
+{% block content %}
+	{% if debug %}<!-- 404.html/content -->{% endif %}
+	<div class="hero-body">
+		<div class="container has-text-centered">
+			<div class="column is-6 is-offset-3">
+				<h1 class="title">
+					404
+				</h1>
+				<h2 class="subtitle">
+					Page not found.
+				</h2>
+				<p>The requested page does not exist or has been moved to another address.</p>
+			</div>
+		</div>
+	</div>
+	{% if debug %}<!-- end of 404.html -->{% endif %}
+{% endblock content %}
