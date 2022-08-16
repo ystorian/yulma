@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+// Import the Bulma SASS files.
+//
+// Important:
+// - Specify a relative path (../) for @import.
+// - Keep the `vendor` directory out of the sass/css directory,
+//   otherwise zola will process all the files and will not be able to compile.
+@import "../../vendor/bulma/sass/utilities/_all.sass";
+@import "../../vendor/bulma/sass/base/_all.sass";
+@import "../../vendor/bulma/sass/elements/button.sass";
+@import "../../vendor/bulma/sass/elements/container.sass";
+@import "../../vendor/bulma/sass/elements/title.sass";
+@import "../../vendor/bulma/sass/form/_all.sass";
+@import "../../vendor/bulma/sass/components/navbar.sass";
+@import "../../vendor/bulma/sass/layout/hero.sass";
+@import "../../vendor/bulma/sass/layout/section.sass";
+// TODO: Probably importing too much, should refactor later.
+
+// Variables.
+@import "_variables.scss";
+
+
+.logotype {
+	font-family: "Avenir Next", "Helvetica Neue", "Lato", sans-serif;
+	font-variant: small-caps;
+	font-weight: 900;
+}
+
+/*
+html,
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1;
+}
+
+.footer {
+	margin-top: 4rem;
+	padding: 2rem;
+
+	.theme-select-container {
+		margin-left: auto;
+	}
+}
+
+.hero .title {
+	font-size: 3rem;
+}
+
+.article,
+.tag-list {
+	.content p {
+		line-height: 1.9;
+		margin: 15px 0;
+	}
+}
+
+.list.box {
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	> a {
+		margin: 0.2rem;
+	}
+}
+*/
