@@ -10,7 +10,8 @@ base_url     = "."
 highlight_code = true
 
 [extra]
-site_title       = "Yulma"
-site_description = "A modern Zola theme made with Bulma"
-pwa              = true
-theme_color      = "#8533ff"
+site_title            = "Yulma"
+site_description      = "A modern Zola theme made with Bulma"
+pwa                   = true
+theme_color           = "#8533ff"
+plausible_data_domain = "ystorian.com"
