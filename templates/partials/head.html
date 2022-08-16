@@ -35,3 +35,18 @@
 	<link rel="icon" type="image/svg+xml"
 		href="{{ get_url(path='icons/icon.svg', cachebust=true) }}" />
 
+{#- Stylesheet #}
+	<link rel="stylesheet"
+		href="{{ get_url(path='css/yulma.css', cachebust=true) }}" />
+
+{#- Markdown highlighter #}
+{% if config.markdown.highlight_code %}
+	<link id="syntax_highlight" href="#" rel="stylesheet">
+{% endif %}
+
+
+{% if config.generate_feed %}
+	<link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path='atom.xml') | safe }}">
+{% endif %}
+
+{#- EOF #}	{% if debug %}<!-- end of partials/head.html -->{% endif %}
